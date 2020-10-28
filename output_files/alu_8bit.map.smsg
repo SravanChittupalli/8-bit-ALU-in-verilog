@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at shift_8bit.v(10): always construct contains both blocking and non-blocking assignments File: D:/QuartusPrime_workspace/ALU_8bit/shift_8bit.v Line: 10

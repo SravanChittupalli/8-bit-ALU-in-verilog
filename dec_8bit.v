@@ -1,0 +1,10 @@
+module dec_8bit
+(
+	input [7:0] a,
+	output [7:0] out,
+	output cout
+);
+
+	sub_8bit dec(a[7:0], 8'b00000001, out[7:0], cout);
+
+endmodule

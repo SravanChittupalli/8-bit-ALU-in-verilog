@@ -1,0 +1,10 @@
+module mux38
+(
+	input en,
+	input [2:0] sel,
+	output [7:0] out
+);
+
+	
+
+endmodule

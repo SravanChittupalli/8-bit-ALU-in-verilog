@@ -1,0 +1,18 @@
+module add_4bit
+(
+	input cin, [7:0] a, b,
+	output c, [7:0] s
+);
+
+	wire c0, c1, c2, c3, c4, c5, c6, c7;
+	wire [7:0] G, P;
+	
+	and_gate8 Cgen(a[7:0], b[7:0], G[7:0]);
+	exor_gate8 Cprop(a[7:0], b[7:0], P[7:0]);
+	
+	assign c0 = (G[0] | (P[0] & cin));
+	assign c1 = (G[1] | (P[1] & G[0]) | (P[1] & P[0] & cin));
+	assign c2 = (G[2] | (P[2] & G[1]) | (P[2] & P[1] & G[0]) | (P[2] & P[1] & P[0] & cin))
+	
+
+endmodule

@@ -1,0 +1,51 @@
+module alu8bit
+(
+	input en,
+	input [7:0] a, b,
+	input [3:0] opcode,
+	output [7:0] out,
+	output cout
+);
+	
+	always @ (en, a, b, opcode)
+	begin
+	
+		if(opcode[3] == 1)
+		begin
+	
+			case({opcode[2], opcode[1], opcode[0]})
+		
+				3'b111: add_8bit addition(a[7:0], b[7:0], 1'b0, out[7:0], cout);
+			
+				3'b110: sub_8bit(a[7:0], b[7:0], out[7:0], cout);
+			
+				3'b101: inc_8bit(a[7:0], out[7:0], cout);
+			
+				3'b100: dec_8bit(a[7:0], out[7:0], cout);
+			
+			endcase
+		
+		end
+		
+		else
+		begin
+			
+			cout = 1'b0;
+
+			case({opcode[2], opcode[1], opcode[0]})
+				
+				3'b111: and_gate8(a[7:0], b[7:0], out[7:0]); 
+				
+				3'b110: or_gate8(a[7:0], b[7:0], out[7:0]);
+				
+				3'b101: exor_gate8(a[7:0], b[7:0], out[7:0]);
+				
+				3'b100: not_gate8(a[7:0], out[7:0]);
+				
+			endcase
+		
+		end
+	
+	end
+
+endmodule

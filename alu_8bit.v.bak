@@ -1,0 +1,11 @@
+module alu_8bit
+(
+	input [7:0] a, b;
+	input [2:0] opcode,
+	output [7:0] out,
+	output cout
+);
+
+	
+
+endmodule

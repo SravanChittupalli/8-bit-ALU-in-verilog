@@ -1,0 +1,246 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/25/2020 15:25:32"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          alu8bit
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module alu8bit_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [7:0] a;
+reg [7:0] b;
+reg en;
+reg [3:0] opcode;
+// wires                                               
+wire cout;
+wire [7:0] out;
+
+// assign statements (if any)                          
+alu8bit i1 (
+// port map - connection between master ports and signals/registers   
+	.a(a),
+	.b(b),
+	.cout(cout),
+	.en(en),
+	.opcode(opcode),
+	.out(out)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// a[ 7 ]
+initial
+begin
+	a[7] = 1'b0;
+	a[7] = #160000 1'b1;
+	a[7] = #160000 1'b0;
+	a[7] = #200000 1'b1;
+	a[7] = #200000 1'b0;
+end 
+// a[ 6 ]
+initial
+begin
+	a[6] = 1'b0;
+	a[6] = #160000 1'b1;
+	a[6] = #160000 1'b0;
+	a[6] = #200000 1'b1;
+	a[6] = #200000 1'b0;
+end 
+// a[ 5 ]
+initial
+begin
+	a[5] = 1'b0;
+	a[5] = #160000 1'b1;
+	a[5] = #160000 1'b0;
+	a[5] = #200000 1'b1;
+	a[5] = #200000 1'b0;
+end 
+// a[ 4 ]
+initial
+begin
+	a[4] = 1'b0;
+	a[4] = #160000 1'b1;
+	a[4] = #160000 1'b0;
+	a[4] = #200000 1'b1;
+	a[4] = #200000 1'b0;
+end 
+// a[ 3 ]
+initial
+begin
+	a[3] = 1'b0;
+	a[3] = #160000 1'b1;
+	a[3] = #160000 1'b0;
+	a[3] = #200000 1'b1;
+	a[3] = #200000 1'b0;
+end 
+// a[ 2 ]
+initial
+begin
+	a[2] = 1'b0;
+	a[2] = #160000 1'b1;
+	a[2] = #160000 1'b0;
+	a[2] = #200000 1'b1;
+	a[2] = #200000 1'b0;
+end 
+// a[ 1 ]
+initial
+begin
+	a[1] = 1'b0;
+	a[1] = #160000 1'b1;
+	a[1] = #160000 1'b0;
+	a[1] = #200000 1'b1;
+	a[1] = #200000 1'b0;
+end 
+// a[ 0 ]
+initial
+begin
+	a[0] = 1'b0;
+	a[0] = #160000 1'b1;
+	a[0] = #160000 1'b0;
+	a[0] = #200000 1'b1;
+	a[0] = #200000 1'b0;
+end 
+// b[ 7 ]
+initial
+begin
+	b[7] = 1'b0;
+	b[7] = #160000 1'b1;
+	b[7] = #160000 1'b0;
+	b[7] = #340000 1'b1;
+	b[7] = #220000 1'b0;
+end 
+// b[ 6 ]
+initial
+begin
+	b[6] = 1'b0;
+	b[6] = #160000 1'b1;
+	b[6] = #160000 1'b0;
+	b[6] = #340000 1'b1;
+	b[6] = #220000 1'b0;
+end 
+// b[ 5 ]
+initial
+begin
+	b[5] = 1'b0;
+	b[5] = #160000 1'b1;
+	b[5] = #160000 1'b0;
+	b[5] = #340000 1'b1;
+	b[5] = #220000 1'b0;
+end 
+// b[ 4 ]
+initial
+begin
+	b[4] = 1'b0;
+	b[4] = #160000 1'b1;
+	b[4] = #160000 1'b0;
+	b[4] = #340000 1'b1;
+	b[4] = #220000 1'b0;
+end 
+// b[ 3 ]
+initial
+begin
+	b[3] = 1'b0;
+	b[3] = #160000 1'b1;
+	b[3] = #160000 1'b0;
+	b[3] = #340000 1'b1;
+	b[3] = #220000 1'b0;
+end 
+// b[ 2 ]
+initial
+begin
+	b[2] = 1'b0;
+	b[2] = #160000 1'b1;
+	b[2] = #160000 1'b0;
+	b[2] = #340000 1'b1;
+	b[2] = #220000 1'b0;
+end 
+// b[ 1 ]
+initial
+begin
+	b[1] = 1'b0;
+	b[1] = #160000 1'b1;
+	b[1] = #160000 1'b0;
+	b[1] = #340000 1'b1;
+	b[1] = #220000 1'b0;
+end 
+// b[ 0 ]
+initial
+begin
+	b[0] = 1'b0;
+	b[0] = #160000 1'b1;
+	b[0] = #160000 1'b0;
+	b[0] = #340000 1'b1;
+	b[0] = #220000 1'b0;
+end 
+
+// en
+initial
+begin
+	en = 1'b0;
+	en = #160000 1'b1;
+	en = #160000 1'b0;
+	en = #120000 1'b1;
+	en = #300000 1'b0;
+	en = #100000 1'b1;
+	en = #140000 1'b0;
+end 
+// opcode[ 3 ]
+initial
+begin
+	opcode[3] = 1'b0;
+	opcode[3] = #160000 1'b1;
+	opcode[3] = #160000 1'b0;
+end 
+// opcode[ 2 ]
+initial
+begin
+	opcode[2] = 1'b0;
+	opcode[2] = #160000 1'b1;
+	opcode[2] = #160000 1'b0;
+	opcode[2] = #380000 1'b1;
+	opcode[2] = #180000 1'b0;
+end 
+// opcode[ 1 ]
+initial
+begin
+	opcode[1] = 1'b0;
+	opcode[1] = #160000 1'b1;
+	opcode[1] = #160000 1'b0;
+	opcode[1] = #380000 1'b1;
+	opcode[1] = #180000 1'b0;
+end 
+// opcode[ 0 ]
+initial
+begin
+	opcode[0] = 1'b0;
+	opcode[0] = #160000 1'b1;
+	opcode[0] = #160000 1'b0;
+	opcode[0] = #380000 1'b1;
+	opcode[0] = #180000 1'b0;
+end 
+endmodule
+

@@ -1,0 +1,1006 @@
+|alu8bit
+en => ~NO_FANOUT~
+a[0] => a[0].IN8
+a[1] => a[1].IN8
+a[2] => a[2].IN8
+a[3] => a[3].IN8
+a[4] => a[4].IN8
+a[5] => a[5].IN8
+a[6] => a[6].IN8
+a[7] => a[7].IN8
+b[0] => b[0].IN5
+b[1] => b[1].IN5
+b[2] => b[2].IN5
+b[3] => b[3].IN5
+b[4] => b[4].IN5
+b[5] => b[5].IN5
+b[6] => b[6].IN5
+b[7] => b[7].IN5
+opcode[0] => Mux2.IN6
+opcode[0] => Mux3.IN6
+opcode[0] => Mux4.IN6
+opcode[0] => Mux5.IN6
+opcode[0] => Mux6.IN6
+opcode[0] => Mux7.IN6
+opcode[0] => Mux8.IN6
+opcode[0] => Mux9.IN6
+opcode[0] => Mux10.IN6
+opcode[0] => Mux11.IN6
+opcode[0] => Mux12.IN6
+opcode[0] => Mux13.IN6
+opcode[0] => Mux14.IN6
+opcode[0] => Mux15.IN6
+opcode[0] => Mux16.IN6
+opcode[0] => Mux17.IN6
+opcode[0] => Mux1.IN6
+opcode[0] => Mux0.IN10
+opcode[1] => Mux2.IN5
+opcode[1] => Mux3.IN5
+opcode[1] => Mux4.IN5
+opcode[1] => Mux5.IN5
+opcode[1] => Mux6.IN5
+opcode[1] => Mux7.IN5
+opcode[1] => Mux8.IN5
+opcode[1] => Mux9.IN5
+opcode[1] => Mux10.IN5
+opcode[1] => Mux11.IN5
+opcode[1] => Mux12.IN5
+opcode[1] => Mux13.IN5
+opcode[1] => Mux14.IN5
+opcode[1] => Mux15.IN5
+opcode[1] => Mux16.IN5
+opcode[1] => Mux17.IN5
+opcode[1] => Mux1.IN5
+opcode[1] => Mux0.IN9
+opcode[2] => Mux2.IN4
+opcode[2] => Mux3.IN4
+opcode[2] => Mux4.IN4
+opcode[2] => Mux5.IN4
+opcode[2] => Mux6.IN4
+opcode[2] => Mux7.IN4
+opcode[2] => Mux8.IN4
+opcode[2] => Mux9.IN4
+opcode[2] => Mux10.IN4
+opcode[2] => Mux11.IN4
+opcode[2] => Mux12.IN4
+opcode[2] => Mux13.IN4
+opcode[2] => Mux14.IN4
+opcode[2] => Mux15.IN4
+opcode[2] => Mux16.IN4
+opcode[2] => Mux17.IN4
+opcode[2] => Mux1.IN4
+opcode[2] => Mux0.IN8
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => out.OUTPUTSELECT
+opcode[3] => cout$latch.ACLR
+out[0] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[5] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[6] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[7] << out.DB_MAX_OUTPUT_PORT_TYPE
+cout << cout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|add_8bit:add
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+s[0] <= add_4bit:add03.port3
+s[1] <= add_4bit:add03.port3
+s[2] <= add_4bit:add03.port3
+s[3] <= add_4bit:add03.port3
+s[4] <= add_4bit:add47.port3
+s[5] <= add_4bit:add47.port3
+s[6] <= add_4bit:add47.port3
+s[7] <= add_4bit:add47.port3
+cout <= add_4bit:add47.port4
+
+
+|alu8bit|add_8bit:add|add_4bit:add03
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|add_8bit:add|add_4bit:add03|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|add_8bit:add|add_4bit:add03|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|add_8bit:add|add_4bit:add47
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|add_8bit:add|add_4bit:add47|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|add_8bit:add|add_4bit:add47|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+out[0] <= add_8bit:sub_out.port3
+out[1] <= add_8bit:sub_out.port3
+out[2] <= add_8bit:sub_out.port3
+out[3] <= add_8bit:sub_out.port3
+out[4] <= add_8bit:sub_out.port3
+out[5] <= add_8bit:sub_out.port3
+out[6] <= add_8bit:sub_out.port3
+out[7] <= add_8bit:sub_out.port3
+cout <= add_8bit:sub_out.port4
+
+
+|alu8bit|sub_8bit:sub|not_gate8:ones_comp
+a8[0] => a8[0].IN1
+a8[1] => a8[1].IN1
+a8[2] => a8[2].IN1
+a8[3] => a8[3].IN1
+a8[4] => a8[4].IN1
+a8[5] => a8[5].IN1
+a8[6] => a8[6].IN1
+a8[7] => a8[7].IN1
+y8[0] <= not_gate4:n03.port1
+y8[1] <= not_gate4:n03.port1
+y8[2] <= not_gate4:n03.port1
+y8[3] <= not_gate4:n03.port1
+y8[4] <= not_gate4:n47.port1
+y8[5] <= not_gate4:n47.port1
+y8[6] <= not_gate4:n47.port1
+y8[7] <= not_gate4:n47.port1
+
+
+|alu8bit|sub_8bit:sub|not_gate8:ones_comp|not_gate4:n03
+a[0] => y[0].DATAIN
+a[1] => y[1].DATAIN
+a[2] => y[2].DATAIN
+a[3] => y[3].DATAIN
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub|not_gate8:ones_comp|not_gate4:n47
+a[0] => y[0].DATAIN
+a[1] => y[1].DATAIN
+a[2] => y[2].DATAIN
+a[3] => y[3].DATAIN
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub|add_8bit:sub_out
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+s[0] <= add_4bit:add03.port3
+s[1] <= add_4bit:add03.port3
+s[2] <= add_4bit:add03.port3
+s[3] <= add_4bit:add03.port3
+s[4] <= add_4bit:add47.port3
+s[5] <= add_4bit:add47.port3
+s[6] <= add_4bit:add47.port3
+s[7] <= add_4bit:add47.port3
+cout <= add_4bit:add47.port4
+
+
+|alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add03
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add47
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|inc_8bit:inc
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+out[0] <= add_8bit:comb_12.port3
+out[1] <= add_8bit:comb_12.port3
+out[2] <= add_8bit:comb_12.port3
+out[3] <= add_8bit:comb_12.port3
+out[4] <= add_8bit:comb_12.port3
+out[5] <= add_8bit:comb_12.port3
+out[6] <= add_8bit:comb_12.port3
+out[7] <= add_8bit:comb_12.port3
+cout <= add_8bit:comb_12.port4
+
+
+|alu8bit|inc_8bit:inc|add_8bit:comb_12
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+s[0] <= add_4bit:add03.port3
+s[1] <= add_4bit:add03.port3
+s[2] <= add_4bit:add03.port3
+s[3] <= add_4bit:add03.port3
+s[4] <= add_4bit:add47.port3
+s[5] <= add_4bit:add47.port3
+s[6] <= add_4bit:add47.port3
+s[7] <= add_4bit:add47.port3
+cout <= add_4bit:add47.port4
+
+
+|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+out[0] <= sub_8bit:dec.port2
+out[1] <= sub_8bit:dec.port2
+out[2] <= sub_8bit:dec.port2
+out[3] <= sub_8bit:dec.port2
+out[4] <= sub_8bit:dec.port2
+out[5] <= sub_8bit:dec.port2
+out[6] <= sub_8bit:dec.port2
+out[7] <= sub_8bit:dec.port2
+cout <= sub_8bit:dec.port3
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+out[0] <= add_8bit:sub_out.port3
+out[1] <= add_8bit:sub_out.port3
+out[2] <= add_8bit:sub_out.port3
+out[3] <= add_8bit:sub_out.port3
+out[4] <= add_8bit:sub_out.port3
+out[5] <= add_8bit:sub_out.port3
+out[6] <= add_8bit:sub_out.port3
+out[7] <= add_8bit:sub_out.port3
+cout <= add_8bit:sub_out.port4
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|not_gate8:ones_comp
+a8[0] => a8[0].IN1
+a8[1] => a8[1].IN1
+a8[2] => a8[2].IN1
+a8[3] => a8[3].IN1
+a8[4] => a8[4].IN1
+a8[5] => a8[5].IN1
+a8[6] => a8[6].IN1
+a8[7] => a8[7].IN1
+y8[0] <= not_gate4:n03.port1
+y8[1] <= not_gate4:n03.port1
+y8[2] <= not_gate4:n03.port1
+y8[3] <= not_gate4:n03.port1
+y8[4] <= not_gate4:n47.port1
+y8[5] <= not_gate4:n47.port1
+y8[6] <= not_gate4:n47.port1
+y8[7] <= not_gate4:n47.port1
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|not_gate8:ones_comp|not_gate4:n03
+a[0] => y[0].DATAIN
+a[1] => y[1].DATAIN
+a[2] => y[2].DATAIN
+a[3] => y[3].DATAIN
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|not_gate8:ones_comp|not_gate4:n47
+a[0] => y[0].DATAIN
+a[1] => y[1].DATAIN
+a[2] => y[2].DATAIN
+a[3] => y[3].DATAIN
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+s[0] <= add_4bit:add03.port3
+s[1] <= add_4bit:add03.port3
+s[2] <= add_4bit:add03.port3
+s[3] <= add_4bit:add03.port3
+s[4] <= add_4bit:add47.port3
+s[5] <= add_4bit:add47.port3
+s[6] <= add_4bit:add47.port3
+s[7] <= add_4bit:add47.port3
+cout <= add_4bit:add47.port4
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add03
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add03|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add03|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => c0.IN1
+cin => c1.IN1
+cin => c2.IN1
+cin => cout.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|and_gate4:Cgen
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|exor_gate4:Cprop
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|and_gate8:and_gate
+a8[0] => a8[0].IN1
+a8[1] => a8[1].IN1
+a8[2] => a8[2].IN1
+a8[3] => a8[3].IN1
+a8[4] => a8[4].IN1
+a8[5] => a8[5].IN1
+a8[6] => a8[6].IN1
+a8[7] => a8[7].IN1
+b8[0] => b8[0].IN1
+b8[1] => b8[1].IN1
+b8[2] => b8[2].IN1
+b8[3] => b8[3].IN1
+b8[4] => b8[4].IN1
+b8[5] => b8[5].IN1
+b8[6] => b8[6].IN1
+b8[7] => b8[7].IN1
+y8[0] <= and_gate4:a03.port2
+y8[1] <= and_gate4:a03.port2
+y8[2] <= and_gate4:a03.port2
+y8[3] <= and_gate4:a03.port2
+y8[4] <= and_gate4:a47.port2
+y8[5] <= and_gate4:a47.port2
+y8[6] <= and_gate4:a47.port2
+y8[7] <= and_gate4:a47.port2
+
+
+|alu8bit|and_gate8:and_gate|and_gate4:a03
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|and_gate8:and_gate|and_gate4:a47
+a[0] => a0.IN0
+a[1] => a1.IN0
+a[2] => a2.IN0
+a[3] => a3.IN0
+b[0] => a0.IN1
+b[1] => a1.IN1
+b[2] => a2.IN1
+b[3] => a3.IN1
+y[0] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|or_gate8:or_gate
+a8[0] => a8[0].IN1
+a8[1] => a8[1].IN1
+a8[2] => a8[2].IN1
+a8[3] => a8[3].IN1
+a8[4] => a8[4].IN1
+a8[5] => a8[5].IN1
+a8[6] => a8[6].IN1
+a8[7] => a8[7].IN1
+b8[0] => b8[0].IN1
+b8[1] => b8[1].IN1
+b8[2] => b8[2].IN1
+b8[3] => b8[3].IN1
+b8[4] => b8[4].IN1
+b8[5] => b8[5].IN1
+b8[6] => b8[6].IN1
+b8[7] => b8[7].IN1
+y8[0] <= or_gate4:or03.port2
+y8[1] <= or_gate4:or03.port2
+y8[2] <= or_gate4:or03.port2
+y8[3] <= or_gate4:or03.port2
+y8[4] <= or_gate4:or47.port2
+y8[5] <= or_gate4:or47.port2
+y8[6] <= or_gate4:or47.port2
+y8[7] <= or_gate4:or47.port2
+
+
+|alu8bit|or_gate8:or_gate|or_gate4:or03
+a[0] => o0.IN0
+a[1] => o1.IN0
+a[2] => o2.IN0
+a[3] => o3.IN0
+b[0] => o0.IN1
+b[1] => o1.IN1
+b[2] => o2.IN1
+b[3] => o3.IN1
+y[0] <= o0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= o1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= o2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= o3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|or_gate8:or_gate|or_gate4:or47
+a[0] => o0.IN0
+a[1] => o1.IN0
+a[2] => o2.IN0
+a[3] => o3.IN0
+b[0] => o0.IN1
+b[1] => o1.IN1
+b[2] => o2.IN1
+b[3] => o3.IN1
+y[0] <= o0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= o1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= o2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= o3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|exor_gate8:exor_gate
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+y[0] <= exor_gate4:x03.port2
+y[1] <= exor_gate4:x03.port2
+y[2] <= exor_gate4:x03.port2
+y[3] <= exor_gate4:x03.port2
+y[4] <= exor_gate4:x47.port2
+y[5] <= exor_gate4:x47.port2
+y[6] <= exor_gate4:x47.port2
+y[7] <= exor_gate4:x47.port2
+
+
+|alu8bit|exor_gate8:exor_gate|exor_gate4:x03
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|exor_gate8:exor_gate|exor_gate4:x47
+a[0] => x0.IN0
+a[1] => x1.IN0
+a[2] => x2.IN0
+a[3] => x3.IN0
+b[0] => x0.IN1
+b[1] => x1.IN1
+b[2] => x2.IN1
+b[3] => x3.IN1
+y[0] <= x0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|not_gate8:not_gate
+a8[0] => a8[0].IN1
+a8[1] => a8[1].IN1
+a8[2] => a8[2].IN1
+a8[3] => a8[3].IN1
+a8[4] => a8[4].IN1
+a8[5] => a8[5].IN1
+a8[6] => a8[6].IN1
+a8[7] => a8[7].IN1
+y8[0] <= not_gate4:n03.port1
+y8[1] <= not_gate4:n03.port1
+y8[2] <= not_gate4:n03.port1
+y8[3] <= not_gate4:n03.port1
+y8[4] <= not_gate4:n47.port1
+y8[5] <= not_gate4:n47.port1
+y8[6] <= not_gate4:n47.port1
+y8[7] <= not_gate4:n47.port1
+
+
+|alu8bit|not_gate8:not_gate|not_gate4:n03
+a[0] => y[0].DATAIN
+a[1] => y[1].DATAIN
+a[2] => y[2].DATAIN
+a[3] => y[3].DATAIN
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu8bit|not_gate8:not_gate|not_gate4:n47
+a[0] => y[0].DATAIN
+a[1] => y[1].DATAIN
+a[2] => y[2].DATAIN
+a[3] => y[3].DATAIN
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
