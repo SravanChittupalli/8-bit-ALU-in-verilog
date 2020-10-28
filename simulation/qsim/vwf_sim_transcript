@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu_8bit -c alu_8bit --vector_source="D:/QuartusPrime_workspace/ALU_8bit/Waveform10.vwf" --testbench_file="D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/Waveform10.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu_8bit -c alu_8bit --vector_source="D:/QuartusPrime_workspace/ALU_8bit/Waveform.vwf" --testbench_file="D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/Waveform.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,8 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Oct 28 08:18:58 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu_8bit -c alu_8bit --vector_source=D:/QuartusPrime_workspace/ALU_8bit/Waveform10.vwf --testbench_file=D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/Waveform10.vwf.vt
+    Info: Processing started: Wed Oct 28 15:20:53 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu_8bit -c alu_8bit --vector_source=D:/QuartusPrime_workspace/ALU_8bit/Waveform.vwf --testbench_file=D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -55,13 +55,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Oct 28 08:18:59 2020
+    Info: Processing started: Wed Oct 28 15:20:55 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/ alu_8bit -c alu_8bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file alu_8bit.vo in folder "D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4718 megabytes
-    Info: Processing ended: Wed Oct 28 08:19:00 2020
+    Info: Peak virtual memory: 4719 megabytes
+    Info: Processing ended: Wed Oct 28 15:20:56 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -81,58 +81,56 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
+
 # do alu_8bit.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:19:01 on Oct 28,2020
+# Start time: 15:20:57 on Oct 28,2020
 # vlog -work work alu_8bit.vo 
-# -- Compiling module shift_8bit
+
+# -- Compiling module alu8bit
+
 # 
 # Top level modules:
-# 	shift_8bit
-# End time: 08:19:01 on Oct 28,2020, Elapsed time: 0:00:00
+# 	alu8bit
+# End time: 15:20:57 on Oct 28,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:19:01 on Oct 28,2020
-# vlog -work work Waveform10.vwf.vt 
+# Start time: 15:20:57 on Oct 28,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module alu8bit_vlg_vec_tst
 
-# -- Compiling module shift_8bit_vlg_vec_tst
 # 
 # Top level modules:
-# 	shift_8bit_vlg_vec_tst
-# End time: 08:19:01 on Oct 28,2020, Elapsed time: 0:00:00
+# 	alu8bit_vlg_vec_tst
+# End time: 15:20:57 on Oct 28,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.shift_8bit_vlg_vec_tst 
-# Start time: 08:19:01 on Oct 28,2020
-# Loading work.shift_8bit_vlg_vec_tst
-# Loading work.shift_8bit
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.alu8bit_vlg_vec_tst 
+# Start time: 15:20:58 on Oct 28,2020
+# Loading work.alu8bit_vlg_vec_tst
+# Loading work.alu8bit
 # Loading cyclonev_ver.cyclonev_io_obuf
 # Loading cyclonev_ver.cyclonev_io_ibuf
-# Loading cyclonev_ver.cyclonev_clkena
-# Loading altera_ver.dffeas
 # Loading cyclonev_ver.cyclonev_lcell_comb
-# Loading altera_ver.PRIM_GDFF_LOW
 # after#25
-# ** Note: $finish    : Waveform10.vwf.vt(47)
-#    Time: 1 us  Iteration: 0  Instance: /shift_8bit_vlg_vec_tst
-# End time: 08:19:02 on Oct 28,2020, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform.vwf.vt(53)
+#    Time: 1 us  Iteration: 0  Instance: /alu8bit_vlg_vec_tst
+# End time: 15:20:58 on Oct 28,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/QuartusPrime_workspace/ALU_8bit/Waveform10.vwf...
+Reading D:/QuartusPrime_workspace/ALU_8bit/Waveform.vwf...
 
 Reading D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/alu_8bit.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/alu_8bit_20201028081902.sim.vwf
+Writing the resulting VWF to D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/alu_8bit_20201028152058.sim.vwf
 
 Finished VCD to VWF conversion.
 

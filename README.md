@@ -1,5 +1,7 @@
 # 8-bit-ALU-in-Verilog
 
+[ALU veilog file](alu8bit.v)
+
 ## Introduction
 ALU performs arithmetic and logic operations. It is also one of the most fundamental units of many computing circuits, including the central processing unit (CPU) of computers, and the graphic processing unit (GPU) of video cards.
 
@@ -31,3 +33,12 @@ Inputs of an ALU are primarily the operands which are the data to be operated on
 <p align = 'center'>
     <img src='assets/alu_schematic_diagram.PNG' width=800 height=450>
 </p>
+
+
+## Output
+
+Output generated using [waveform file](Waveform.vwf)
+<p align = 'center'>
+    <img src='assets/add_output.PNG' width=800 height=450>
+</p>
+
