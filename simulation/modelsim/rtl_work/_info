@@ -1,0 +1,339 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusPrime_workspace/ALU_8bit/simulation/modelsim
+vadd_4bit
+Z1 !s110 1604399503
+!i10b 1
+!s100 FOS=e]6m3ENzWi:7iS5T]1
+Iz<eC0;4QF1^PKQd8Kj^eO0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1603512576
+8D:/QuartusPrime_workspace/ALU_8bit/add_4bit.v
+FD:/QuartusPrime_workspace/ALU_8bit/add_4bit.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1604399503.000000
+!s107 D:/QuartusPrime_workspace/ALU_8bit/add_4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/add_4bit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit
+Z7 tCvgOpt 0
+vadd_8bit
+R1
+!i10b 1
+!s100 fIoM1_zCj?IZGH?aIUgOM1
+IG48^kNn^M=cl]n8HMQme;1
+R2
+R0
+w1603513333
+8D:/QuartusPrime_workspace/ALU_8bit/add_8bit.v
+FD:/QuartusPrime_workspace/ALU_8bit/add_8bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/add_8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/add_8bit.v|
+!i113 1
+R5
+R6
+R7
+valu8bit
+R1
+!i10b 1
+!s100 VgV2;Lk7IJ?WZ5VD7HkVe1
+IV?>P4LCIziM:3T3;4VlFU1
+R2
+R0
+w1604392242
+8D:/QuartusPrime_workspace/ALU_8bit/alu8bit.v
+FD:/QuartusPrime_workspace/ALU_8bit/alu8bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/alu8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/alu8bit.v|
+!i113 1
+R5
+R6
+R7
+vand_gate4
+R1
+!i10b 1
+!s100 No;0>TaJX9B_kcMD;GhPI3
+ICG>nn4:BDXA>G3o=cJiEZ2
+R2
+R0
+w1603456816
+8D:/QuartusPrime_workspace/ALU_8bit/and_gate4.v
+FD:/QuartusPrime_workspace/ALU_8bit/and_gate4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/and_gate4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/and_gate4.v|
+!i113 1
+R5
+R6
+R7
+vand_gate8
+R1
+!i10b 1
+!s100 [Xm<9ik^n[LzIz=mAGXZo3
+ITlJ_L5@Ia9L6aEMV<@70W2
+R2
+R0
+w1603456819
+8D:/QuartusPrime_workspace/ALU_8bit/and_gate8.v
+FD:/QuartusPrime_workspace/ALU_8bit/and_gate8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/and_gate8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/and_gate8.v|
+!i113 1
+R5
+R6
+R7
+vdec_8bit
+Z8 !s110 1604399504
+!i10b 1
+!s100 ImUB4ZUdEz?5ECJGB0M=i3
+ICYTE6]HGCm97738T]1BJ10
+R2
+R0
+w1603612902
+8D:/QuartusPrime_workspace/ALU_8bit/dec_8bit.v
+FD:/QuartusPrime_workspace/ALU_8bit/dec_8bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1604399504.000000
+!s107 D:/QuartusPrime_workspace/ALU_8bit/dec_8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/dec_8bit.v|
+!i113 1
+R5
+R6
+R7
+vexor_gate4
+R1
+!i10b 1
+!s100 Q2XWT1>OljKXN2FmKXcUV2
+IX]6@RGbRLbz03G2d;R;A60
+R2
+R0
+w1603506300
+8D:/QuartusPrime_workspace/ALU_8bit/exor_gate4.v
+FD:/QuartusPrime_workspace/ALU_8bit/exor_gate4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/exor_gate4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/exor_gate4.v|
+!i113 1
+R5
+R6
+R7
+vexor_gate8
+R8
+!i10b 1
+!s100 Bj;gbL^OVU4PN2SA6E;J80
+I^jQg[hGCOcmVa8dGlkiZ11
+R2
+R0
+w1603549498
+8D:/QuartusPrime_workspace/ALU_8bit/exor_gate8.v
+FD:/QuartusPrime_workspace/ALU_8bit/exor_gate8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/exor_gate8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/exor_gate8.v|
+!i113 1
+R5
+R6
+R7
+vinc_8bit
+R8
+!i10b 1
+!s100 eocN<R7_3icG4dfm??lbS0
+IeNDIk2VQ[Af_gE14ecn;h1
+R2
+R0
+w1604392698
+8D:/QuartusPrime_workspace/ALU_8bit/inc_8bit.v
+FD:/QuartusPrime_workspace/ALU_8bit/inc_8bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/QuartusPrime_workspace/ALU_8bit/inc_8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/inc_8bit.v|
+!i113 1
+R5
+R6
+R7
+vnot_gate4
+R1
+!i10b 1
+!s100 T>@6E<nQB1JPG6]9<L4@:2
+Im:26NdiZkK:V0IFb5ef?i1
+R2
+R0
+w1603456822
+8D:/QuartusPrime_workspace/ALU_8bit/not_gate4.v
+FD:/QuartusPrime_workspace/ALU_8bit/not_gate4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/not_gate4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/not_gate4.v|
+!i113 1
+R5
+R6
+R7
+vnot_gate8
+R1
+!i10b 1
+!s100 UV8fWU7>5m[NKCNCA]G3P1
+ICjhJ=jg`^=WOliN70`YA]2
+R2
+R0
+w1603457127
+8D:/QuartusPrime_workspace/ALU_8bit/not_gate8.v
+FD:/QuartusPrime_workspace/ALU_8bit/not_gate8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/not_gate8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/not_gate8.v|
+!i113 1
+R5
+R6
+R7
+vor_gate4
+R1
+!i10b 1
+!s100 fVj<SV85aa3k@7RnkzZ@[3
+I7a`^gDS<g=`:8^7UcjSz=0
+R2
+R0
+w1603456804
+8D:/QuartusPrime_workspace/ALU_8bit/or_gate4.v
+FD:/QuartusPrime_workspace/ALU_8bit/or_gate4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/or_gate4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/or_gate4.v|
+!i113 1
+R5
+R6
+R7
+vor_gate8
+R1
+!i10b 1
+!s100 KjS2LXbLl<QDGndhnogg@2
+IQbYzzLbaa1aTTAWMVEDLo0
+R2
+R0
+w1603456811
+8D:/QuartusPrime_workspace/ALU_8bit/or_gate8.v
+FD:/QuartusPrime_workspace/ALU_8bit/or_gate8.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/or_gate8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/or_gate8.v|
+!i113 1
+R5
+R6
+R7
+vsub_8bit
+R1
+!i10b 1
+!s100 8>z8F9@ij?jVnglD:?5:K3
+Ijgf=0O8FZ]4MC^j331hXG0
+R2
+R0
+w1603591802
+8D:/QuartusPrime_workspace/ALU_8bit/sub_8bit.v
+FD:/QuartusPrime_workspace/ALU_8bit/sub_8bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QuartusPrime_workspace/ALU_8bit/sub_8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusPrime_workspace/ALU_8bit|D:/QuartusPrime_workspace/ALU_8bit/sub_8bit.v|
+!i113 1
+R5
+R6
+R7
+vtestbench_alu
+!s110 1604399515
+!i10b 1
+!s100 ]bzSVLNOLIfo[[AV68]OX3
+IV6dIlHW3YFB[_:995T[m71
+R2
+R0
+w1604399395
+8D:/QuartusPrime_workspace/ALU_8bit/testbench_alu.v
+FD:/QuartusPrime_workspace/ALU_8bit/testbench_alu.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1604399515.000000
+!s107 D:/QuartusPrime_workspace/ALU_8bit/testbench_alu.v|
+!s90 -reportprogress|300|-work|work|D:/QuartusPrime_workspace/ALU_8bit/testbench_alu.v|
+!i113 1
+o-work work
+R7

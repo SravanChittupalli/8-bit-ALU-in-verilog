@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu_8bit
-Wed Oct 28 08:33:39 2020
+Tue Nov 03 16:00:48 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -17,7 +17,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Port Connectivity Checks: "dec_8bit:dec|sub_8bit:dec"
- 12. Port Connectivity Checks: "inc_8bit:inc|add_8bit:comb_12"
+ 12. Port Connectivity Checks: "inc_8bit:inc|add_8bit:inc_byte"
  13. Port Connectivity Checks: "sub_8bit:sub|add_8bit:sub_out"
  14. Port Connectivity Checks: "add_8bit:add"
  15. Post-Synthesis Netlist Statistics for Top Partition
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 28 08:33:39 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 03 16:00:48 2020       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; alu_8bit                                    ;
 ; Top-level Entity Name           ; alu8bit                                     ;
@@ -239,9 +239,9 @@ https://fpgasoftware.intel.com/eula.
 ;       |exor_gate4:x03|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|exor_gate8:exor_gate|exor_gate4:x03                       ; exor_gate4  ; work         ;
 ;       |exor_gate4:x47|       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|exor_gate8:exor_gate|exor_gate4:x47                       ; exor_gate4  ; work         ;
 ;    |inc_8bit:inc|            ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc                                              ; inc_8bit    ; work         ;
-;       |add_8bit:comb_12|     ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:comb_12                             ; add_8bit    ; work         ;
-;          |add_4bit:add03|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03              ; add_4bit    ; work         ;
-;          |add_4bit:add47|    ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47              ; add_4bit    ; work         ;
+;       |add_8bit:inc_byte|    ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:inc_byte                            ; add_8bit    ; work         ;
+;          |add_4bit:add03|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03             ; add_4bit    ; work         ;
+;          |add_4bit:add47|    ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47             ; add_4bit    ; work         ;
 ;    |sub_8bit:sub|            ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|sub_8bit:sub                                              ; sub_8bit    ; work         ;
 ;       |add_8bit:sub_out|     ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|sub_8bit:sub|add_8bit:sub_out                             ; add_8bit    ; work         ;
 ;          |add_4bit:add03|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add03              ; add_4bit    ; work         ;
@@ -295,14 +295,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------+-------+----------+--------------------------+
 
 
-+-----------------------------------------------------------+
-; Port Connectivity Checks: "inc_8bit:inc|add_8bit:comb_12" ;
-+------+-------+----------+---------------------------------+
-; Port ; Type  ; Severity ; Details                         ;
-+------+-------+----------+---------------------------------+
-; b    ; Input ; Info     ; Stuck at GND                    ;
-; cin  ; Input ; Info     ; Stuck at VCC                    ;
-+------+-------+----------+---------------------------------+
++------------------------------------------------------------+
+; Port Connectivity Checks: "inc_8bit:inc|add_8bit:inc_byte" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                     ;
+; cin  ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -359,7 +359,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Oct 28 08:33:30 2020
+    Info: Processing started: Tue Nov 03 16:00:39 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu_8bit -c alu_8bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -393,7 +393,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file dec_8bi
     Info (12023): Found entity 1: dec_8bit File: D:/QuartusPrime_workspace/ALU_8bit/dec_8bit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux38.v
     Info (12023): Found entity 1: mux38 File: D:/QuartusPrime_workspace/ALU_8bit/mux38.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at inc_8bit.v(11): instance has no name File: D:/QuartusPrime_workspace/ALU_8bit/inc_8bit.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file testbench_alu.v
+    Info (12023): Found entity 1: testbench_alu File: D:/QuartusPrime_workspace/ALU_8bit/testbench_alu.v Line: 3
 Info (12127): Elaborating entity "alu8bit" for the top level hierarchy
 Warning (10235): Verilog HDL Always Construct warning at alu8bit.v(39): variable "add_out" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/QuartusPrime_workspace/ALU_8bit/alu8bit.v Line: 39
 Warning (10235): Verilog HDL Always Construct warning at alu8bit.v(40): variable "add_cout" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/QuartusPrime_workspace/ALU_8bit/alu8bit.v Line: 40
@@ -431,9 +432,9 @@ Info (21057): Implemented 90 device resources after synthesis - the final resour
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 60 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Wed Oct 28 08:33:39 2020
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Tue Nov 03 16:00:48 2020
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:21
 

@@ -1,0 +1,188 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do alu_8bit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/sub_8bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/sub_8bit.v 
+# -- Compiling module sub_8bit
+# 
+# Top level modules:
+# 	sub_8bit
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/alu8bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/alu8bit.v 
+# -- Compiling module alu8bit
+# 
+# Top level modules:
+# 	alu8bit
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/add_8bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/add_8bit.v 
+# -- Compiling module add_8bit
+# 
+# Top level modules:
+# 	add_8bit
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/add_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/add_4bit.v 
+# -- Compiling module add_4bit
+# 
+# Top level modules:
+# 	add_4bit
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/or_gate4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/or_gate4.v 
+# -- Compiling module or_gate4
+# 
+# Top level modules:
+# 	or_gate4
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/or_gate8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/or_gate8.v 
+# -- Compiling module or_gate8
+# 
+# Top level modules:
+# 	or_gate8
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/and_gate4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/and_gate4.v 
+# -- Compiling module and_gate4
+# 
+# Top level modules:
+# 	and_gate4
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/and_gate8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/and_gate8.v 
+# -- Compiling module and_gate8
+# 
+# Top level modules:
+# 	and_gate8
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/not_gate4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/not_gate4.v 
+# -- Compiling module not_gate4
+# 
+# Top level modules:
+# 	not_gate4
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/not_gate8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/not_gate8.v 
+# -- Compiling module not_gate8
+# 
+# Top level modules:
+# 	not_gate8
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/exor_gate4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/exor_gate4.v 
+# -- Compiling module exor_gate4
+# 
+# Top level modules:
+# 	exor_gate4
+# End time: 16:01:43 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/exor_gate8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:43 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/exor_gate8.v 
+# -- Compiling module exor_gate8
+# 
+# Top level modules:
+# 	exor_gate8
+# End time: 16:01:44 on Nov 03,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/inc_8bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:44 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/inc_8bit.v 
+# -- Compiling module inc_8bit
+# 
+# Top level modules:
+# 	inc_8bit
+# End time: 16:01:44 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusPrime_workspace/ALU_8bit {D:/QuartusPrime_workspace/ALU_8bit/dec_8bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:44 on Nov 03,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusPrime_workspace/ALU_8bit" D:/QuartusPrime_workspace/ALU_8bit/dec_8bit.v 
+# -- Compiling module dec_8bit
+# 
+# Top level modules:
+# 	dec_8bit
+# End time: 16:01:44 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work D:/QuartusPrime_workspace/ALU_8bit/testbench_alu.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:55 on Nov 03,2020
+# vlog -reportprogress 300 -work work D:/QuartusPrime_workspace/ALU_8bit/testbench_alu.v 
+# -- Compiling module testbench_alu
+# 
+# Top level modules:
+# 	testbench_alu
+# End time: 16:01:55 on Nov 03,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# No ports found in testbench_alu
+vsim work.testbench_alu
+# vsim work.testbench_alu 
+# Start time: 16:02:07 on Nov 03,2020
+# Loading work.testbench_alu
+# Loading work.alu8bit
+# Loading work.add_8bit
+# Loading work.add_4bit
+# Loading work.and_gate4
+# Loading work.exor_gate4
+# Loading work.sub_8bit
+# Loading work.not_gate8
+# Loading work.not_gate4
+# Loading work.inc_8bit
+# Loading work.dec_8bit
+# Loading work.and_gate8
+# Loading work.or_gate8
+# Loading work.or_gate4
+# Loading work.exor_gate8
+add wave -position insertpoint sim:/testbench_alu/*
+run
+run
+# End time: 16:13:27 on Nov 03,2020, Elapsed time: 0:11:20
+# Errors: 0, Warnings: 0

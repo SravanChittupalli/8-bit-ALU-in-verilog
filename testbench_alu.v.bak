@@ -1,0 +1,13 @@
+`include "alu8bit.v"
+
+module testbench_alu();
+
+reg [7:0] a;
+reg [7:0] b;
+reg en;
+reg [3:0] opcode;
+// wires                                               
+wire cout;
+wire [7:0]  out;
+
+localparam period = 20;

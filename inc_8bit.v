@@ -8,6 +8,6 @@ module inc_8bit
 wire cin = 1'b1;
 wire [7:0]b = 8'b00000000;
 
-	add_8bit(a[7:0], b[7:0], cin, out[7:0], cout);
+	add_8bit inc_byte(a[7:0], b[7:0], cin, out[7:0], cout);
 
 endmodule

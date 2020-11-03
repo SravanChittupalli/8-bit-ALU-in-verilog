@@ -1,5 +1,5 @@
 Flow report for alu_8bit
-Wed Oct 28 15:20:56 2020
+Tue Nov 03 16:01:19 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Oct 28 15:20:56 2020       ;
+; Flow Status                     ; Successful - Tue Nov 03 16:01:19 2020       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; alu_8bit                                    ;
 ; Top-level Entity Name           ; alu8bit                                     ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/28/2020 08:33:30 ;
+; Start date & time ; 11/03/2020 16:00:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; alu_8bit            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 9447193249167.160385421016868          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 9447193249167.160439943920336          ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -110,14 +110,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4810 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:15     ; 1.0                     ; 6241 MB             ; 00:00:27                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4825 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 5071 MB             ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4811 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:16     ; 1.0                     ; 6240 MB             ; 00:00:28                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4821 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 5074 MB             ; 00:00:05                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4718 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
-; Total                ; 00:00:35     ; --                      ; --                  ; 00:00:59                           ;
+; Total                ; 00:00:35     ; --                      ; --                  ; 00:01:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -131,8 +129,6 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; uzumakiNaruto    ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; uzumakiNaruto    ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; uzumakiNaruto    ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; uzumakiNaruto    ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; uzumakiNaruto    ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -144,8 +140,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off alu_8bit -c alu
 quartus_asm --read_settings_files=off --write_settings_files=off alu_8bit -c alu_8bit
 quartus_sta alu_8bit -c alu_8bit
 quartus_eda --read_settings_files=off --write_settings_files=off alu_8bit -c alu_8bit
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu_8bit -c alu_8bit --vector_source=D:/QuartusPrime_workspace/ALU_8bit/Waveform.vwf --testbench_file=D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/ alu_8bit -c alu_8bit
 
 
 

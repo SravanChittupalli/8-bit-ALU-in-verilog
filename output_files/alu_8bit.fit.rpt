@@ -1,5 +1,5 @@
 Fitter report for alu_8bit
-Wed Oct 28 08:33:55 2020
+Tue Nov 03 16:01:05 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Oct 28 08:33:55 2020       ;
+; Fitter Status                   ; Successful - Tue Nov 03 16:01:05 2020       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; alu_8bit                                    ;
 ; Top-level Entity Name           ; alu8bit                                     ;
@@ -157,7 +157,7 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.4%      ;
-;     Processor 3            ;   0.4%      ;
+;     Processor 3            ;   0.3%      ;
 ;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
@@ -1403,9 +1403,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |exor_gate4:x03|       ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|exor_gate8:exor_gate|exor_gate4:x03                       ; exor_gate4  ; work         ;
 ;       |exor_gate4:x47|       ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|exor_gate8:exor_gate|exor_gate4:x47                       ; exor_gate4  ; work         ;
 ;    |inc_8bit:inc|            ; 4.0 (0.0)            ; 5.0 (0.0)                        ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc                                              ; inc_8bit    ; work         ;
-;       |add_8bit:comb_12|     ; 4.0 (0.0)            ; 5.0 (0.0)                        ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:comb_12                             ; add_8bit    ; work         ;
-;          |add_4bit:add03|    ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03              ; add_4bit    ; work         ;
-;          |add_4bit:add47|    ; 3.5 (3.5)            ; 4.5 (4.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47              ; add_4bit    ; work         ;
+;       |add_8bit:inc_byte|    ; 4.0 (0.0)            ; 5.0 (0.0)                        ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:inc_byte                            ; add_8bit    ; work         ;
+;          |add_4bit:add03|    ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03             ; add_4bit    ; work         ;
+;          |add_4bit:add47|    ; 3.5 (3.5)            ; 4.5 (4.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47             ; add_4bit    ; work         ;
 ;    |sub_8bit:sub|            ; 7.5 (0.0)            ; 7.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|sub_8bit:sub                                              ; sub_8bit    ; work         ;
 ;       |add_8bit:sub_out|     ; 7.5 (0.0)            ; 7.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|sub_8bit:sub|add_8bit:sub_out                             ; add_8bit    ; work         ;
 ;          |add_4bit:add03|    ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu8bit|sub_8bit:sub|add_8bit:sub_out|add_4bit:add03              ; add_4bit    ; work         ;
@@ -1507,15 +1507,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|s[2]                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|s[2]                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add03|s[3]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|s[3]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03|s[3]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|c2~0                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|c2~0                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[0]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[0]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[0]               ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[1]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[1]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[1]               ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|c0~0   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|c0~0                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|c0~0               ; 1                 ; 0       ;
 ;      - out~41                                                           ; 1                 ; 0       ;
 ;      - out~33                                                           ; 1                 ; 0       ;
 ; opcode[0]                                                               ;                   ;         ;
@@ -1542,15 +1542,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|s[2]                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|s[2]                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add03|s[3]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|s[3]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03|s[3]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|c2~0                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|c2~0                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[0]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[0]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[0]               ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[1]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[1]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[1]               ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|c0~0   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|c0~0                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|c0~0               ; 1                 ; 0       ;
 ; b[1]                                                                    ;                   ;         ;
 ;      - out~37                                                           ; 0                 ; 0       ;
 ;      - out~0                                                            ; 0                 ; 0       ;
@@ -1564,17 +1564,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|s[2]                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|s[2]                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add03|s[3]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|s[3]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03|s[3]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|c2~0                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|c2~0                                 ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|s[3]                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[0]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[0]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[0]               ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|cout~0                               ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[1]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[1]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[1]               ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|c0~0   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|c0~0                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|c0~0               ; 1                 ; 0       ;
 ; b[2]                                                                    ;                   ;         ;
 ;      - out~29                                                           ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|s[2]                ; 1                 ; 0       ;
@@ -1586,17 +1586,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; a[3]                                                                    ;                   ;         ;
 ;      - out~21                                                           ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add03|s[3]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|s[3]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03|s[3]               ; 1                 ; 0       ;
 ;      - exor_gate8:exor_gate|exor_gate4:x03|x3                           ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[0]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[0]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[0]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|s[0]                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add03|cout~0                               ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[1]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[1]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[1]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|s[1]                ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|c0~0   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|c0~0                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|c0~0               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add03|cout~0              ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|c0                  ; 1                 ; 0       ;
 ; b[3]                                                                    ;                   ;         ;
@@ -1610,14 +1610,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; a[4]                                                                    ;                   ;         ;
 ;      - out~17                                                           ; 0                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[0]   ; 0                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[0]                ; 0                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[0]               ; 0                 ; 0       ;
 ;      - exor_gate8:exor_gate|exor_gate4:x47|x0                           ; 0                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[1]   ; 0                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[1]                ; 0                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[1]               ; 0                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|s[1]                ; 0                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|s[1]                                 ; 0                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|c0~0   ; 0                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|c0~0                ; 0                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|c0~0               ; 0                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|s[2]                ; 0                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|s[2]                                 ; 0                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|c0                  ; 0                 ; 0       ;
@@ -1634,20 +1634,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; a[5]                                                                    ;                   ;         ;
 ;      - out~13                                                           ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[1]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[1]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[1]               ; 1                 ; 0       ;
 ;      - exor_gate8:exor_gate|exor_gate4:x47|x1                           ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[2]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[2]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[2]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|s[2]                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|s[2]                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[3]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[3]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[3]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|c2~0                ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|c2~1                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|c2~0                                 ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|c2~1                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|cout~0 ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|cout~0              ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|cout~0             ; 1                 ; 0       ;
 ; b[5]                                                                    ;                   ;         ;
 ;      - out~13                                                           ; 0                 ; 0       ;
 ;      - exor_gate8:exor_gate|exor_gate4:x47|x1                           ; 0                 ; 0       ;
@@ -1660,16 +1660,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; a[6]                                                                    ;                   ;         ;
 ;      - out~9                                                            ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[2]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[2]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[2]               ; 1                 ; 0       ;
 ;      - exor_gate8:exor_gate|exor_gate4:x47|x2                           ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[3]   ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[3]                ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[3]               ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|c2~0                ; 1                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|c2~1                ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|c2~0                                 ; 1                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|c2~1                                 ; 1                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|cout~0 ; 1                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|cout~0              ; 1                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|cout~0             ; 1                 ; 0       ;
 ; b[6]                                                                    ;                   ;         ;
 ;      - out~9                                                            ; 1                 ; 0       ;
 ;      - exor_gate8:exor_gate|exor_gate4:x47|x2                           ; 1                 ; 0       ;
@@ -1680,10 +1680,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; a[7]                                                                    ;                   ;         ;
 ;      - out~5                                                            ; 0                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|s[3]   ; 0                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|s[3]                ; 0                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|s[3]               ; 0                 ; 0       ;
 ;      - exor_gate8:exor_gate|exor_gate4:x47|x3                           ; 0                 ; 0       ;
 ;      - dec_8bit:dec|sub_8bit:dec|add_8bit:sub_out|add_4bit:add47|cout~0 ; 0                 ; 0       ;
-;      - inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|cout~0              ; 0                 ; 0       ;
+;      - inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|cout~0             ; 0                 ; 0       ;
 ;      - sub_8bit:sub|add_8bit:sub_out|add_4bit:add47|cout~0              ; 0                 ; 0       ;
 ;      - add_8bit:add|add_4bit:add47|cout~0                               ; 0                 ; 0       ;
 ; b[7]                                                                    ;                   ;         ;
@@ -2109,20 +2109,20 @@ Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X11_Y0 to location X21_Y10
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/QuartusPrime_workspace/ALU_8bit/output_files/alu_8bit.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 215 warnings
-    Info: Peak virtual memory: 6241 megabytes
-    Info: Processing ended: Wed Oct 28 08:33:56 2020
+    Info: Peak virtual memory: 6240 megabytes
+    Info: Processing ended: Tue Nov 03 16:01:05 2020
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +----------------------------+

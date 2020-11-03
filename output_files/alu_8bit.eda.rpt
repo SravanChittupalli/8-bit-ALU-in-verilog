@@ -1,5 +1,5 @@
 EDA Netlist Writer report for alu_8bit
-Wed Oct 28 15:20:56 2020
+Tue Nov 03 16:01:19 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Oct 28 15:20:56 2020 ;
+; EDA Netlist Writer Status ; Successful - Tue Nov 03 16:01:19 2020 ;
 ; Revision Name             ; alu_8bit                              ;
 ; Top-level Entity Name     ; alu8bit                               ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------+
-; Simulation Generated Files                                      ;
-+-----------------------------------------------------------------+
-; Generated Files                                                 ;
-+-----------------------------------------------------------------+
-; D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim//alu_8bit.vo ;
-+-----------------------------------------------------------------+
++--------------------------------------------------------------------+
+; Simulation Generated Files                                         ;
++--------------------------------------------------------------------+
+; Generated Files                                                    ;
++--------------------------------------------------------------------+
+; D:/QuartusPrime_workspace/ALU_8bit/simulation/modelsim/alu_8bit.vo ;
++--------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,27 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.
-    Info: Your use of Intel Corporation's design tools, logic functions 
-    Info: and other software and tools, and any partner logic 
-    Info: functions, and any output files from any of the foregoing 
-    Info: (including device programming or simulation files), and any 
-    Info: associated documentation or information are expressly subject 
-    Info: to the terms and conditions of the Intel Program License 
-    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
-    Info: the Intel FPGA IP License Agreement, or other applicable license
-    Info: agreement, including, without limitation, that your use is for
-    Info: the sole purpose of programming logic devices manufactured by
-    Info: Intel and sold by Intel or its authorized distributors.  Please
-    Info: refer to the applicable agreement for further details, at
-    Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Oct 28 15:20:55 2020
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim/ alu_8bit -c alu_8bit
+    Info: Processing started: Tue Nov 03 16:01:18 2020
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off alu_8bit -c alu_8bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file alu_8bit.vo in folder "D:/QuartusPrime_workspace/ALU_8bit/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file alu_8bit.vo in folder "D:/QuartusPrime_workspace/ALU_8bit/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4719 megabytes
-    Info: Processing ended: Wed Oct 28 15:20:56 2020
+    Info: Peak virtual memory: 4718 megabytes
+    Info: Processing ended: Tue Nov 03 16:01:19 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

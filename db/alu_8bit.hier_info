@@ -430,18 +430,18 @@ a[4] => a[4].IN1
 a[5] => a[5].IN1
 a[6] => a[6].IN1
 a[7] => a[7].IN1
-out[0] <= add_8bit:comb_12.port3
-out[1] <= add_8bit:comb_12.port3
-out[2] <= add_8bit:comb_12.port3
-out[3] <= add_8bit:comb_12.port3
-out[4] <= add_8bit:comb_12.port3
-out[5] <= add_8bit:comb_12.port3
-out[6] <= add_8bit:comb_12.port3
-out[7] <= add_8bit:comb_12.port3
-cout <= add_8bit:comb_12.port4
+out[0] <= add_8bit:inc_byte.port3
+out[1] <= add_8bit:inc_byte.port3
+out[2] <= add_8bit:inc_byte.port3
+out[3] <= add_8bit:inc_byte.port3
+out[4] <= add_8bit:inc_byte.port3
+out[5] <= add_8bit:inc_byte.port3
+out[6] <= add_8bit:inc_byte.port3
+out[7] <= add_8bit:inc_byte.port3
+cout <= add_8bit:inc_byte.port4
 
 
-|alu8bit|inc_8bit:inc|add_8bit:comb_12
+|alu8bit|inc_8bit:inc|add_8bit:inc_byte
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -470,7 +470,7 @@ s[7] <= add_4bit:add47.port3
 cout <= add_4bit:add47.port4
 
 
-|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03
+|alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03
 a[0] => a[0].IN2
 a[1] => a[1].IN2
 a[2] => a[2].IN2
@@ -491,7 +491,7 @@ s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|and_gate4:Cgen
+|alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03|and_gate4:Cgen
 a[0] => a0.IN0
 a[1] => a1.IN0
 a[2] => a2.IN0
@@ -506,7 +506,7 @@ y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add03|exor_gate4:Cprop
+|alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add03|exor_gate4:Cprop
 a[0] => x0.IN0
 a[1] => x1.IN0
 a[2] => x2.IN0
@@ -521,7 +521,7 @@ y[2] <= x2.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= x3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47
+|alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47
 a[0] => a[0].IN2
 a[1] => a[1].IN2
 a[2] => a[2].IN2
@@ -542,7 +542,7 @@ s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|and_gate4:Cgen
+|alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|and_gate4:Cgen
 a[0] => a0.IN0
 a[1] => a1.IN0
 a[2] => a2.IN0
@@ -557,7 +557,7 @@ y[2] <= a2.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= a3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu8bit|inc_8bit:inc|add_8bit:comb_12|add_4bit:add47|exor_gate4:Cprop
+|alu8bit|inc_8bit:inc|add_8bit:inc_byte|add_4bit:add47|exor_gate4:Cprop
 a[0] => x0.IN0
 a[1] => x1.IN0
 a[2] => x2.IN0
