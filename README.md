@@ -1,6 +1,6 @@
 # 8-bit-ALU-in-Verilog
 
-[ALU veilog file](alu8bit.v)
+[ALU veilog file](alu8bit.v)  
 [Testbench file](testbench_alu.v)
 
 ## Introduction
